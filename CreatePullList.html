@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>ComicWorm</title>
+  <meta name="description" content="Comic Book Database and Pricings">
+  <meta name="keywords" content="comic, comics, comic book, manga">
+  <meta name="author" content="Ian Worthington">
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <link rel="shortcut icon" href="images/ComicBookWormBrowserIcon.ico">
+  <link rel="apple-touch-icon" href="images/ComicBookWorm.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/ComicBookWorm.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/ComicBookWorm.png">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="band header"> <!-- open band -->
+      <div class="container"> <!-- open container -->
+        <div class="sixteen columns">
+          <div class="two columns">
+            <a href="index.html"><img class="logo" src="images/ComicBookWorm.png" alt="logo"></a>
+          </div>
+
+            <div class ="twelve columns">
+              <h1>Create a Pull</h1>
+            </div>
+          </div>
+      </div> <!-- end container -->
+    </div> <!-- end band -->
+      
+    <div class="navigation">  
+      <div class="container" id="nav"> <!-- open container -->
+
+          <ul class="fourteen columns offset-by-three">
+            <li class="three columns"><a href="index.html">HOME</a></li>
+            <li class="three columns"><a href="services.html">SERVICES</a>
+              <ul class="dropdown">
+                <li><a href="NearestComicBookStore.html">Nearest Comic Book Store</a></li>
+                <li><a href="CreatePullList.html">Create a Pull List</a></li>
+              </ul>
+            </li>
+            <li class="three columns"><a href="gallery.html">GALLERY</a>
+              <ul class="dropdown">
+                <li><a href="ComicPanelGallery.html">Comic Panels</a></li>
+                <li><a href="GalleryFanArt.html">Fan Art</a></li>
+                <li><a href="GalleryPosters.html">Posters</a></li>
+                <li><a href="VideosGallery.html">Videos</a></li>
+              </ul>
+            </li>
+            <li class="three columns"><a href="ContactUs.html">CONTACT US</a></li>
+          </ul> <!-- end nav bar -->
+      </div> <!-- end container -->
+    </div> <!-- end band -->
+
+
+  <div class="band main-body sixteen columns"> <!-- open band -->
+    <div class="container sixteen columns featuretile">
+      <form name="PullList" method="post" action="mailto:ianworthington1@gmail.com">
+        <fieldset class="seven columns offset-by-two">
+          <legend><br>
+            Personal Details
+          </legend><br>
+            Name: <input type="text"><br>
+            Email: <input type="text"><br>
+            Contact No: <input type="text"><br>
+        </fieldset>
+        <fieldset class="seven columns offset-by-two">
+          <legend><br>
+            Preferred Publisher(s)
+          </legend><br>
+            <br>
+            <label for="DC Comics">DC Comics</label>
+            <input type="checkbox" name="Publisher" id="DC Comics" value="DC Comics"><br>
+            <br>
+            <br>
+            <label for="Marvel Comics">Marvel Comics</label>
+            <input type="checkbox" name="Publisher" id="Marvel" Comics" value="Marvel Comics">
+          <br>
+          <br>
+            <p id="OtherPub">Other<input type="text" name="Publisher"></p>
+        </fieldset>
+        <fieldset class="fourteen columns offset-by-two">
+          <legend><br>
+            Single Issues for Pull List
+          </legend><br>
+          <textarea id="PullListIssues" rows="10" cols="10">
+          </textarea>
+          <div class="nine columns offset-by-six">
+            <button type="button" id="Subbtn" name="Submit">Submit</button>
+            <button type="reset" id="Resbtn" name="Reset">Reset</button>
+          </div>
+        </fieldset>
+      </form>
+    </div> <!-- end container -->
+  </div> <!-- end band -->
+
+
+  <div class="band sixteen columns footer"> <!-- open band -->
+      <div class="container bottomnav"> <!--open container -->
+
+          <div class="sixteen columns">
+            <ul id="bottomnav" class="sixteen columns offset-by-two">
+              <li class="footerstuff three columns"><a href="index.html">HOME</a></li>
+              <li class="footerstuff three columns"><a href="services.html">SERVICES</a></li>
+              <li class="footerstuff three columns"><a href="gallery.html">GALLERY</a></li>
+              <li class="footerstuff three columns"><a href="ContactUs.html">CONTACT US</a></li>
+            </ul>
+          </div>
+
+      </div> <!-- end container -->
+  </div> <!-- end band -->
+  <script type="text/javascript" src="js/myDropDownMenu.js"></script>
+</body>
+</html>
